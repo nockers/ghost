@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "4.47.4",
-    "ghost-storage-cloudinary": "2.2.1",
+    "ghost": "5.25.5",
+    "ghost-storage-cloudinary": "2.2.5",
     "lyra": "github:TryGhost/lyra#main",
     "mysql2": "2.3.3"
   },
   "scripts": {
     "start": "bin/create-config && node index.js",
     "postinstall": "bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh"
+  },
+  "volta": {
+    "node": "18.12.1",
+    "yarn": "3.3.0"
   }
 }
